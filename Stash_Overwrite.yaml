@@ -1,4 +1,4 @@
-proxy-groups:
+proxy-groups: #!replace
   - name: 节点选择
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
     type: select
@@ -335,7 +335,7 @@ proxy-groups:
       - 韩国节点
       - 奈飞节点
 
-rule-providers:
+rule-providers: #!replace
   LocalAreaNetwork:
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
     path: ./ruleset/LocalAreaNetwork.list
@@ -554,7 +554,7 @@ rule-providers:
     format: text
     type: http
 
-rules:
+rules: #!replace
   # ========== 第1层：局域网 / 解封（最高优先级）==========
   - "RULE-SET,LocalAreaNetwork,全球直连"
   - "RULE-SET,UnBan,全球直连"
